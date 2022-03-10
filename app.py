@@ -212,8 +212,9 @@ def home():
 def get():
     return jsonify(counts)
 
+p1 = threading.Thread(target=main,args=(video,))
+p1.start()
+
 if __name__ == "__main__":
-    p1 = threading.Thread(target=main,args=(video,))
     p2 = threading.Thread(target=app.run,args=())
-    p1.start()
     p2.start()
