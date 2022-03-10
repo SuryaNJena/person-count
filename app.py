@@ -196,7 +196,7 @@ def main(cap):
         cv2.putText(frame, "Exit Count="+str(exit_count), (0, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0),2)
         cv2.putText(frame, "Exit Count="+str(exit_count), (0, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255),1)
 
-        cv2.imshow("CAM_FEED", frame)
+        #cv2.imshow("CAM_FEED", frame)
 
         if cv2.waitKey(1) >= 0:
             cv2.destroyAllWindows() 
