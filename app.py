@@ -198,9 +198,9 @@ def main(cap):
 
         #cv2.imshow("CAM_FEED", frame)
 
-        if cv2.waitKey(1) >= 0:
-            cv2.destroyAllWindows() 
-            break
+        #if cv2.waitKey(1) >= 0:
+            #cv2.destroyAllWindows() 
+            #break
 
         counts['exit_count'] = exit_count
 
