@@ -136,7 +136,7 @@ def main(cap):
             break
         
         # reduce frame size to speed up inference
-        #frame = cv2.resize(frame,(int(frame.shape[1]/1.5),int(frame.shape[0]/1.5)))
+        frame = cv2.resize(frame,(int(frame.shape[1]/1.5),int(frame.shape[0]/1.5)))
         frame_resized = cv2.resize(frame,(300,300)) # resize frame for prediction
 
         # MobileNet requires fixed dimensions for input image(s)
