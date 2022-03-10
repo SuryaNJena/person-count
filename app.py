@@ -38,7 +38,7 @@ def add_new_object(obj, image, persons):
     ymax = obj[3]
 
     # init tracker
-    tracker = cv2.legacy.TrackerKCF_create()
+    tracker = cv2.TrackerKCF_create()
     tracker.init(image, (xmin, ymin, xmax-xmin, ymax-ymin))
     trackers.append((tracker, person))
 
