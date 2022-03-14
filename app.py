@@ -20,7 +20,7 @@ counts = {'exit_count': 0}
 trackers = []
 
 FINISH_LINE = 450 # persons will be counted when hitting this line
-START_LINE = 100  # persons won't be added until beyond the line
+START_LINE = 150  # persons won't be added until beyond the line
 
 # OpenCV colors are (B, G, R) tuples
 WHITE = (255, 255, 255)
